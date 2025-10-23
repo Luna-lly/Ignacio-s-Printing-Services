@@ -134,7 +134,7 @@
       justify-content:center; 
       text-align:center; 
       padding:110px 20px 40px; 
-      background:#1F4934; 
+      background:#074029; 
       color:#fff; 
   }
   .hero-inner{ 
@@ -429,17 +429,6 @@ section.visible {
 @media (max-width: 768px) {
   html { font-size: 90%; }
   .header-inner { padding: 10px 16px; }
-  .menu-toggle { display: block; }
-  .primary-nav {
-    position: absolute;
-    top: 70px; left: 0; right: 0;
-    background: #fff;
-    display: none;
-    z-index: 999;
-    flex-direction: column;
-  }
-  .primary-nav.active { display: flex; }
-  .primary-nav a { padding: 12px 18px; display: block; }
   .hero {
     padding: 120px 16px 40px;
   }
@@ -532,6 +521,66 @@ html {
     padding: 15px;
   }
 }
+@media (max-width: 768px) {
+  .primary-nav {
+    position: absolute;
+    top: 70px; /* below the header */
+    left: 0;
+    right: 0;
+    background: white; /* white background for dropdown */
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .primary-nav.active {
+    display: flex; /* visible when toggle is active */
+  }
+
+  .primary-nav a {
+    color: black; /* black text for contrast */
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .primary-nav a:hover {
+    background: var(--green);
+    color: white;
+  }
+}
+@media (max-width: 600px) {
+  .primary-nav {
+    position: absolute;
+    top: 70px; /* below the header */
+    left: 0;
+    right: 0;
+    background: white; /* white background for dropdown */
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    z-index: 999;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+
+  .primary-nav.active {
+    display: flex; /* visible when toggle is active */
+  }
+
+  .primary-nav a {
+    color: black; /* black text for contrast */
+    padding: 15px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .primary-nav a:hover {
+    background: var(--green);
+    color: white;
+  }
+}
+
+
 
 
 
