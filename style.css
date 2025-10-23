@@ -134,7 +134,7 @@
       justify-content:center; 
       text-align:center; 
       padding:110px 20px 40px; 
-      background: linear-gradient(180deg, rgba(0,0,0,0.25), rgba(0,0,0,0.1)), var(--green); 
+      background:#1F4934; 
       color:#fff; 
   }
   .hero-inner{ 
@@ -532,6 +532,7 @@ html {
     padding: 15px;
   }
 }
+
 
 
 
